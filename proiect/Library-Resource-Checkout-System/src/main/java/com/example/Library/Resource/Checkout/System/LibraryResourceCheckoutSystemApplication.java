@@ -8,6 +8,6 @@ public class LibraryResourceCheckoutSystemApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryResourceCheckoutSystemApplication.class, args);
+		System.out.println("The application started.");
 	}
-
 }
