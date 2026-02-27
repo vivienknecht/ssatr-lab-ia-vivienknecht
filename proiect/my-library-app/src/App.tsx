@@ -8,12 +8,23 @@ import { ReservationsPage } from "./pages/ReservationsPage";
 const App: React.FC = () => {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<BookList />} />
-         <Route path="/checkouts" element={<CheckoutsPage />} />
-        <Route path="/reservations" element={<ReservationsPage />} /> 
-      </Routes>
+      <div style={{ 
+        display: "flex", 
+        flexDirection: "column", 
+        alignItems: "center", 
+        minHeight: "100vh",
+        marginLeft: "100" 
+      }}>
+        <Navbar />
+
+        <div style={{ width: "100%", maxWidth: "1200px", textAlign: "center" }}>
+          <Routes>
+            <Route path="/" element={<BookList />} />
+            <Route path="/checkouts" element={<CheckoutsPage />} />
+            <Route path="/reservations" element={<ReservationsPage />} />
+          </Routes>
+        </div>
+      </div>
     </Router>
   );
 };
